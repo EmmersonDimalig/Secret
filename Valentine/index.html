@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG clip path for rounded V-shape wrapping -->
+    <svg width="0" height="0" style="position:absolute; pointer-events:none;">
+        <defs>
+            <clipPath id="wrapClip" clipPathUnits="objectBoundingBox">
+                <path d="M 0,0 L 1,0 L 0.54,0.85 Q 0.5,0.97 0.46,0.85 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- Envelope opening screen -->
+    <div class="envelope-overlay" id="envelope">
+        <div class="envelope">💌</div>
+        <div class="open-text">Hello, Lalove</div>
+        <div class="open-hint">Click to open</div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1 class="title">Happy Valentine's and Happy Momot Lalovee</h1>
+
+        <div class="bouquet-layout">
+            <div class="side-message">
+                <p>Of all the lives that exist, I am so happy to exist in yours.</p>
+                <p>I love you and will always love you, even after this life ends. And if there's another life after that, I will love you then.</p>
+            </div>
+
+            <div class="bouquet-wrapper sway">
+            <div class="bouquet-glow"></div>
+
+            <!-- Stems -->
+            <div class="stem" style="height: 220px; transform: translateX(-50%) rotate(-18deg);"></div>
+            <div class="stem" style="height: 250px; transform: translateX(-50%) rotate(-10deg);"></div>
+            <div class="stem" style="height: 270px; transform: translateX(-50%) rotate(-3deg);"></div>
+            <div class="stem" style="height: 260px; transform: translateX(-50%) rotate(5deg);"></div>
+            <div class="stem" style="height: 240px; transform: translateX(-50%) rotate(13deg);"></div>
+            <div class="stem" style="height: 200px; transform: translateX(-50%) rotate(20deg);"></div>
+            <div class="stem" style="height: 230px; transform: translateX(-50%) rotate(-25deg);"></div>
+
+            <!-- Leaves -->
+            <div class="leaf" style="bottom: 220px; left: 155px; transform: rotate(-40deg);"></div>
+            <div class="leaf left" style="bottom: 250px; left: 225px; transform: rotate(30deg);"></div>
+            <div class="leaf" style="bottom: 200px; left: 175px; transform: rotate(-25deg);"></div>
+            <div class="leaf left" style="bottom: 230px; left: 240px; transform: rotate(45deg);"></div>
+
+            <!-- Peony 1 - big, center -->
+            <div class="flower" style="top: 30px; left: 165px; animation-delay: 1.2s;">
+                <div class="peony pink1">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Peony 2 -->
+            <div class="flower" style="top: 65px; left: 100px; animation-delay: 1.4s;">
+                <div class="peony pink2">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Peony 3 -->
+            <div class="flower" style="top: 70px; left: 240px; animation-delay: 1.6s;">
+                <div class="peony pink3">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Peony 4 -->
+            <div class="flower" style="top: 110px; left: 170px; animation-delay: 1.8s;">
+                <div class="peony pink4">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Small bloom 5 -->
+            <div class="flower" style="top: 45px; left: 275px; animation-delay: 2s;">
+                <div class="peony pink5 sm">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Small bloom 6 -->
+            <div class="flower" style="top: 95px; left: 55px; animation-delay: 2.1s;">
+                <div class="peony pink6 sm">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Small bloom 7 -->
+            <div class="flower" style="top: 140px; left: 110px; animation-delay: 2.2s;">
+                <div class="peony pink1 sm">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Small bloom 8 -->
+            <div class="flower" style="top: 130px; left: 255px; animation-delay: 2.3s;">
+                <div class="peony pink3 sm">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Tiny bloom 9 -->
+            <div class="flower" style="top: 20px; left: 225px; animation-delay: 2.4s;">
+                <div class="peony pink2 sm">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring inner"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Tiny bloom 10 -->
+            <div class="flower" style="top: 15px; left: 120px; animation-delay: 2.5s;">
+                <div class="peony pink5 xs">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Tiny bloom 11 -->
+            <div class="flower" style="top: 155px; left: 200px; animation-delay: 2.6s;">
+                <div class="peony pink4 xs">
+                    <div class="petal-ring outer"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="petal-ring middle"><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div></div>
+                    <div class="bloom-center"></div>
+                </div>
+            </div>
+
+            <!-- Tiny pink accent flowers -->
+            <div class="baby-breath" style="top: 55px; left: 145px;">
+                <div class="tiny-flower" style="top: 0; left: 0; animation-delay: 0s;"></div>
+                <div class="tiny-flower" style="top: 8px; left: 14px; animation-delay: 0.3s;"></div>
+                <div class="tiny-flower" style="top: -5px; left: 20px; animation-delay: 0.6s;"></div>
+            </div>
+            <div class="baby-breath" style="top: 90px; left: 295px;">
+                <div class="tiny-flower" style="top: 0; left: 0; animation-delay: 0.2s;"></div>
+                <div class="tiny-flower" style="top: 10px; left: 8px; animation-delay: 0.5s;"></div>
+                <div class="tiny-flower" style="top: 3px; left: -8px; animation-delay: 0.8s;"></div>
+            </div>
+            <div class="baby-breath" style="top: 150px; left: 60px;">
+                <div class="tiny-flower" style="top: 0; left: 0; animation-delay: 0.1s;"></div>
+                <div class="tiny-flower" style="top: -8px; left: 10px; animation-delay: 0.4s;"></div>
+            </div>
+            <div class="baby-breath" style="top: 25px; left: 260px;">
+                <div class="tiny-flower" style="top: 0; left: 0; animation-delay: 0.7s;"></div>
+                <div class="tiny-flower" style="top: 6px; left: -10px; animation-delay: 1s;"></div>
+                <div class="tiny-flower" style="top: 12px; left: 5px; animation-delay: 0.2s;"></div>
+            </div>
+            <div class="baby-breath" style="top: 160px; left: 200px;">
+                <div class="tiny-flower" style="top: 0; left: 0; animation-delay: 0.4s;"></div>
+                <div class="tiny-flower" style="top: -6px; left: 12px; animation-delay: 0.9s;"></div>
+            </div>
+
+            <!-- Sparkles -->
+            <div class="sparkle" style="top: 30px; left: 190px; animation-delay: 0s;"></div>
+            <div class="sparkle" style="top: 60px; left: 310px; animation-delay: 0.5s;"></div>
+            <div class="sparkle" style="top: 100px; left: 50px; animation-delay: 1s;"></div>
+            <div class="sparkle" style="top: 150px; left: 310px; animation-delay: 1.5s;"></div>
+            <div class="sparkle" style="top: 20px; left: 130px; animation-delay: 0.7s;"></div>
+            <div class="sparkle" style="top: 170px; left: 140px; animation-delay: 1.2s;"></div>
+
+            <!-- Wrapping paper -->
+            <div class="wrap">
+                <div class="wrap-body"></div>
+                <div class="wrap-scallop"></div>
+                <div class="wrap-ribbon"></div>
+                <div class="bow">
+                    <div class="bow-loop bow-left"></div>
+                    <div class="bow-loop bow-right"></div>
+                    <div class="bow-knot"></div>
+                    <div class="bow-tail bow-tail-left"></div>
+                    <div class="bow-tail bow-tail-right"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // ===== Falling Sakura Petals (lightweight — limited count) =====
+        function createSakuraPetals() {
+            const colors = ['#ffb6d3', '#ffc8de', '#ff8ec4', '#ffdce9', '#f9a0c0'];
+            const container = document.body;
+            const maxPetals = 15;
+            let petalCount = 0;
+
+            setInterval(() => {
+                if (petalCount >= maxPetals) return;
+                petalCount++;
+                const petal = document.createElement('div');
+                petal.className = 'sakura-petal';
+                petal.style.left = Math.random() * 100 + 'vw';
+                petal.style.setProperty('--drift', (Math.random() * 120 - 60) + 'px');
+                petal.style.background = colors[Math.floor(Math.random() * colors.length)];
+                petal.style.width = (8 + Math.random() * 8) + 'px';
+                petal.style.height = (6 + Math.random() * 5) + 'px';
+                petal.style.animationDuration = (7 + Math.random() * 5) + 's';
+                container.appendChild(petal);
+                setTimeout(() => { petal.remove(); petalCount--; }, 12000);
+            }, 900);
+        }
+
+        // ===== Sparkle Mouse Trail (throttled) =====
+        let lastTrail = 0;
+        document.addEventListener('mousemove', function(e) {
+            if (!document.getElementById('envelope').classList.contains('hidden')) return;
+            const now = Date.now();
+            if (now - lastTrail < 120) return;
+            lastTrail = now;
+
+            const sparkle = document.createElement('div');
+            sparkle.className = 'cursor-sparkle';
+            sparkle.style.left = e.clientX + 'px';
+            sparkle.style.top = e.clientY + 'px';
+            sparkle.textContent = '✦';
+            sparkle.style.fontSize = (8 + Math.random() * 8) + 'px';
+            sparkle.style.color = ['#ffb6d3', '#ffc8de', '#fff', '#ffd6e5'][Math.floor(Math.random() * 4)];
+
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 700);
+        });
+
+        // ===== Envelope opening =====
+        const envelopeEl = document.getElementById('envelope');
+        envelopeEl.addEventListener('click', function() {
+            envelopeEl.classList.add('hidden');
+            createSakuraPetals();
+        });
+        envelopeEl.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            envelopeEl.classList.add('hidden');
+            createSakuraPetals();
+        });
+
+        // ===== Click burst (lighter — fewer particles) =====
+        document.addEventListener('click', function(e) {
+            if (!document.getElementById('envelope').classList.contains('hidden')) return;
+
+            const emojis = ['💗', '💖', '🌸', '✨'];
+            const count = 5;
+
+            for (let i = 0; i < count; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'click-particle';
+                particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.fontSize = (14 + Math.random() * 10) + 'px';
+
+                const angle = (Math.PI * 2 / count) * i;
+                const dist = 40 + Math.random() * 50;
+                particle.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+                particle.style.setProperty('--dy', (Math.sin(angle) * dist - 50) + 'px');
+
+                document.body.appendChild(particle);
+                setTimeout(() => particle.remove(), 1000);
+            }
+        });
+
+        // ===== Gentle parallax on bouquet =====
+        let rafId = null;
+        document.addEventListener('mousemove', function(e) {
+            if (rafId) return;
+            rafId = requestAnimationFrame(() => {
+                const bouquet = document.querySelector('.bouquet-wrapper');
+                if (!bouquet || !document.getElementById('envelope').classList.contains('hidden')) { rafId = null; return; }
+
+                const cx = window.innerWidth / 2;
+                const cy = window.innerHeight / 2;
+                const dx = (e.clientX - cx) / cx;
+                const dy = (e.clientY - cy) / cy;
+
+                bouquet.style.transform = `rotate(${-2 + dx * 3}deg) translateX(${dx * 5}px) translateY(${dy * 3}px)`;
+                rafId = null;
+            });
+        });
+    </script>
+</body>
+</html>
